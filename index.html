@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Carbon Footprint</title>
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+
+<div class="navbar">
+    <ul>
+        <li><button><a href="#Head">Home</a></button></li>
+        <li><button><a href="#CF">About</a></button></li>
+        <li><button><a href="#Impact">Impact</a></button></li>
+        <li><button><a href="#Contact">Contact</a></button></li>
+        <li id="DM"><button>Dark Mode</button></li>
+    </ul>
+
+</div>
+
+<body style="background-color: lightgreen;">
+    <section id="Head" >
+        <!-- Add HTML markup elements for your web site below -->
+        <div id="header-container" >
+            <h1 style="font-family:'Times New Roman', Times, serif;">Carbon footprint</h1>
+            <h3><i>The gas you pass</i></h3>
+        </div>
+    </section>
+    <section id="About" >
+        <div id="CF" >
+            <h2 class="revealable">What is Carbon Footprint?</h2>
+
+            <p class="revealable"> Carbon footprint is the amount of greenhouse gases (carbon dioxide, methane, nitrous oxide, etc) that an
+                individual produces. This can range from direct production such as burning fuel when driving a car or
+                indirect production such as the gases emitted through the process of a package being delivered. The
+                build up of these greenhouse gases can lead to increase in global temperature which we refer to as
+                global warming.</p>
+        </div>
+
+        <div id="header-image" >
+            <img class="revealable " src="img/Carbon footprint.jpeg" alt="contributors to carbon footprint" />
+            <img class="revealable " src="img/glb warming.jpg" alt="Greenhouse effect" />
+
+
+        </div>
+        <div class="caption revealable" >
+            <h5>Things that contribute to your Caarbon Footprint</h5>
+            <h5>The Greenhouse effect</h5>
+        </div>
+        <div class="header-button" >
+
+            <button>
+                <a href="https://www.britannica.com/science/carbon-footprint" target="_blank">more</a>
+            </button>
+
+            <button>
+                <a href="https://science.nasa.gov/climate-change/faq/what-is-the-greenhouse-effect/"
+                    target="_blank">more</a>
+            </button>
+
+
+        </div>
+    </section>
+    <section id="Impact" class="revealable">
+        <p>one way to reduce your carbon footprint is by cooking your own food, as you are choosing exactly what's going
+            into your food and maybe even using vegetables from your garden resulting in a reduction of carbon footprint
+            of vegetables you would have eaten if you ate out. Here are some recipes you can try yourself:</p>
+            <div class="picturelist revealable">
+            <img class= "imagepic inneritem " src="img/Spaghetti.jpg" alt = "Spaghetti"/>
+            <p class="inneritem"> Spaghetti and Meatballs<p>
+            <button class="inneritem">
+                <a href ="https://damndelicious.net/2023/09/29/classic-spaghetti-and-meatballs/">To Site</a>
+            </button>
+        </div>
+            <div class="picturelist revealable">
+                <img class= "imagepic inneritem " src="img/tiramisu.jpg" alt = "Tiramisu"/>
+                <p class="inneritem"> Tiramisu<p>
+                <button class="inneritem">
+                    <a href ="https://cooking.nytimes.com/recipes/1018684-classic-tiramisu">To Site</a>
+                </button>
+        </div>
+    </div>
+    <div class="picturelist  revealable">
+        <img class= "imagepic inneritem " src="img/Cookie.jpg" alt = "Cookie"/>
+        <p class="inneritem"> Cookie<p>
+        <button class="inneritem">
+            <a href ="https://cooking.nytimes.com/recipes/1015819-chocolate-chip-cookies">To Site</a>
+        </button>
+</div>
+        </section>
+
+    <section id="Petition" class="revealable" >
+
+        <div class="petition" id="petition">
+
+            <h2>Sign Our Petition 📢</h2>
+            <div class="petition-container">
+
+
+                <div class="climate-change">
+                    <p>Climate change is a serious event that affects not only us humans but also the animals we share
+                        the earth with.
+                        With increasing temperatures globally the biome of the polar bears are slowly melting so they
+                        are losing their homes.
+                        With the ice melting sea levels also rises which could eventually lead to the submersion of
+                        coastal towns and cities.
+                        We ask you to sign this position to help all beings on Earth thrive.
+                    </p>
+                </div>
+
+                <div class="signatures ">
+                    <p class="revealable">🖊️ DJ from Brooklyn supports this.</p>
+                    <p class="revealable">🖊️ Amy from Queens supports this.</p>
+                    <p class="revealable">🖊️ Teresa from Harlem supports this.</p>
+                    <p class="revealable" id="yoursig"></p>
+                    <p class="revealable" id="counter">"🖊️ 3 people have signed this petition and support this cause."
+                    </p>
+                </div>
+
+            </div>
+
+            <!--- Sign Petition Form --->
+            <form id="sign-petition" title="sign-petition">
+                <!-- inputs go here -->
+                <Label for="name">Name</Label>
+                <input id="name" name="name" required>
+                <Label for="hometown">Hometown</Label>
+                <input id="hometown" name="hometown" required>
+                <Label for="email">Email</Label>
+                <input id="email" name="email" required>
+
+            </form>
+
+            <!--- Sign Now Button --->
+            <button id="sign-now-button">Sign Now</button>
+
+
+        </div>
+    </section>
+    <!-- Modal -->
+<div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <!-- text here -->
+         <p id = "thanks-modal-content">Lorem ipsum dolor</p>
+        <!-- button here (stretch feature) -->
+      </div>
+      <!-- image here-->
+       <img id = "popup" src="img/tree.jpeg" alt="Thank you!" />
+    </div>
+      
+  </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
